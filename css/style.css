@@ -50,7 +50,16 @@
         height: 60px;
         border:10px solid black;
     }
-    
+    #numero-tela {
+
+        font-family: digital-display-tfb;
+        width: calc(100% - 10px);
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        text-align: right;
+        font-size: 3.5rem;
+    }
     #tela input {
         font-family: digital-display-tfb;
         width: calc(100% - 10px);
@@ -74,6 +83,27 @@
         outline: 0;
     }
     
+    #btn-7 {
+        background: rgb(19, 100, 73) !important;
+        size: 100%
+    }
+    #teclado table {
+        width: 100%;
+    }
+
+    .c-btn {
+        background: rgb(19, 100, 73) !important;
+    }
+    #teclado table {
+        width: 100%;
+    }
+    .c-btn1 {
+        background: rgb(19, 100, 73) !important;
+        
+    }
+    #teclado table {
+        width: 100%;
+    }
     
     #teclado table {
         width: 100%;
@@ -85,8 +115,7 @@
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-        cursor: pointer;
+        font-family:Georgia, 'Times New Roman', Times, serif
     }
     
     #teclado {
@@ -104,7 +133,7 @@
 
 
     #teclado table td:hover {
-        background-color: #535050;
+        background-color: #535050 !important;
     }
     
    
