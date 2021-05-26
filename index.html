@@ -11,44 +11,44 @@
     <body>
 
         <header class="title">
-            <h1>Caculadora Básica</h1>
+            <h1>Calculadora Básica</h1>
             <span>De Paulo Moura</span>
         </header>
 
         <section class="container">
             <header id="tela">
-                <div id="numero-tela"><input type="number" readonly value="0"></div>
+                <div id="numero-tela"><input class="display" type="text" disabled readonly value="0"></div>
             <h3 id="marca">Paulo Tech</h3>
             </header>
             <section id="teclado">
                 <table>
                     <tr>
-                        <td class="c-btn1" id="reset" colspan="3">AC</td>
+                        <td class="c-btn1" id="reset" onclick="reset()" colspan="3">AC</td>
                         <td class="c-btn" id="limpa-tela" onclick="limpaTela()" colspan="3">C</td>
-                        <td>÷</td>
+                        <td value="/" id="mais">÷</td>
                     </tr>
                     <tr>
-                        <td type="button" id="b7" onclick="printNunber7()" colspan="1">7</td>
-                        <td type="button" id="b8" onclick="printNunber8()" colspan="2">8</td>
-                        <td type="button" id="b9" onclick="printNunber9()" colspan="3">9</td>
-                        <td>x</td>
+                        <td type="button" id="b7" value="7" onclick="printNunber(7)" colspan="1">7</td>
+                        <td type="button" id="b8" value="8" onclick="printNunber(8)" colspan="2">8</td>
+                        <td type="button" id="b9" value="9" onclick="printNunber(9)" colspan="3">9</td>
+                        <td value="*" id="vezes" >x</td>
                     </tr>
                     <tr>
-                        <td type="button" id="b4" onclick="printNunber4()" colspan="1">4</td>
-                        <td type="button" id="b5" onclick="printNunber5()" colspan="2">5</td>
-                        <td type="button" id="b6" onclick="printNunber6()" colspan="3">6</td>
-                        <td colspan="1">-</td>
+                        <td type="button" id="b4" value="4" onclick="printNunber(4)" colspan="1">4</td>
+                        <td type="button" id="b5" value="5" onclick="printNunber(5)" colspan="2">5</td>
+                        <td type="button" id="b6" value="6" onclick="printNunber(6)" colspan="3">6</td>
+                        <td id="menos" colspan="1">-</td>
                     </tr>
                     <tr>
-                        <td type="button" id="b1" onclick="printNunber1()" colspan="1">1</td>
-                        <td type="button" id="b2" onclick="printNunber2()" colspan="2">2</td>
-                        <td type="button" id="b3" onclick="printNunber3()" colspan="3">3</td>
-                        <td>+</td>
+                        <td type="button" id="b1" value="1" onclick="printNunber(1)" colspan="1">1</td>
+                        <td type="button" id="b2" value="2" onclick="printNunber(2)" colspan="2">2</td>
+                        <td type="button" id="b3" value="3" onclick="printNunber(3)" colspan="3">3</td>
+                        <td value="+" id="mais" type="button" onclick="somar()">+</td>
                     </tr>
                     <tr>
-                        <td type="button" id="b1" onclick="printNunber0()" colspan="4">0</td>
-                        <td colspan="2">.</td>
-                        <td rowspan="2">=</td>
+                        <td type="button" id="b1" value="0" onclick="printNunber(0)" colspan="4">0</td>
+                        <td id="ponto" colspan="2">.</td>
+                        <td  value="="id="igual" rowspan="2">=</td>
                     </tr>
                 </table>
 
