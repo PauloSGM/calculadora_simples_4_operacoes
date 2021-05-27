@@ -1,32 +1,22 @@
-
+var d1 = ""
+var d2 = ""
+var d4 = ""
+var d5 = ""
+var d6 = ""
+var d7 = ""
+var d8 = ""
+var d9 = ""
+var d10 = ""
 function printNumber(n) {
-    if (typeof gvisor == 'undefined') {
-       ddocument.getElementById("numero-tela") = '';
-    }
-    document.calcform.visor.value = document.calcform.visor.value + n;
-    gvisor = 1;
+    d2 = n
+    d1 = document.getElementById("numero-tela").value;
+    document.getElementById("numero-tela").value = d1 + d2;
+    totalDigitado = d1 + d2;
+    
+    
 };
-function calcOper(oper, valor1, valor2) {
-    if (oper == "somar") {
-       var valor = parseFloat(valor1) + parseFloat(valor2);
-    } else {
-       if (oper == "subtrair") {
-          var valor = valor1 - valor2;
-       } else {
-          if (oper == "multiplicar") {
-             var valor = valor1 * valor2;
-          } else {
-             var valor = valor1 / valor2;
-          }
-       }
-    }
- 
-    return(valor);
-
-
-
 
 function reset() {
-    document.getElementById("numero-tela").innerHTML = "0";};
+    document.getElementById("numero-tela").value = "0";};
 function limpaTela() {
-    document.getElementById("numero-tela").innerHTML = "0";};
+    document.getElementById("numero-tela").value = "0";};
