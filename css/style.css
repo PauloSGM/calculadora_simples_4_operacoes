@@ -50,6 +50,18 @@
         height: 60px;
         border:10px solid black;
     }
+
+    #resultado {
+
+        font-family: digital-display-tfb;
+        width: calc(100% - 10px);
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        text-align: right;
+        font-size: 3.5rem;
+    }
+    
     #numero-tela {
 
         font-family: digital-display-tfb;

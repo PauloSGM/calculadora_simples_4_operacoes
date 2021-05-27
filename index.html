@@ -17,38 +17,38 @@
 
         <section class="container">
             <header id="tela">
-               <input placeholder="0" id="numero-tela" class="display" type="button" value="0">
-            <h3 id="marca">Paulo Tech</h3>
+              <div id="resultado"><input placeholder="0" id="numero-tela" class="display" type="text" readonly value=""></div>
+    
             </header>
             <section id="teclado">
                 <table>
                     <tr>
                         <td class="c-btn1" id="reset" onclick="reset()" colspan="3">AC</td>
                         <td class="c-btn" id="limpa-tela" onclick="limpaTela()" colspan="3">C</td>
-                        <td value="/" id="mais">÷</td>
+                        <td value="/" id="mais" onclick="printNumber('/')" >÷</td>
                     </tr>
                     <tr>
                         <td type="button" id="b7" value="7" onclick="printNumber(7)" colspan="1">7</td>
                         <td type="button" id="b8" value="8" onclick="printNumber(8)" colspan="2">8</td>
                         <td type="button" id="b9" value="9" onclick="printNumber(9)" colspan="3">9</td>
-                        <td value="*" id="vezes" >x</td>
+                        <td value="*" id="vezes"onclick="printNumber('*')"  >x</td>
                     </tr>
                     <tr>
                         <td type="button" id="b4" value="4" onclick="printNumber(4)" colspan="1">4</td>
                         <td type="button" id="b5" value="5" onclick="printNumber(5)" colspan="2">5</td>
                         <td type="button" id="b6" value="6" onclick="printNumber(6)" colspan="3">6</td>
-                        <td id="menos" colspan="1">-</td>
+                        <td  value="-" id="menos" colspan="1" onclick="printNumber('-')">-</td>
                     </tr>
                     <tr>
                         <td type="button" id="b1" value="1" onclick="printNumber(1)" colspan="1">1</td>
                         <td type="button" id="b2" value="2" onclick="printNumber(2)" colspan="2">2</td>
                         <td type="button" id="b3" value="3" onclick="printNumber(3)" colspan="3">3</td>
-                        <td value="+" id="mais" type="button" onclick="somar()">+</td>
+                        <td value="+" id="mais" type="button" onclick="printNumber('+')">+</td>
                     </tr>
                     <tr>
                         <td type="button" id="b1" value="0" onclick="printNumber(0)" colspan="4">0</td>
-                        <td id="ponto" colspan="2">.</td>
-                        <td  value="="id="igual" rowspan="2">=</td>
+                        <td id="ponto" colspan="2" onclick="printNumber('.')">.</td>
+                        <td  value="="id="igual" rowspan="2"onclick="calc()">=</td>
                     </tr>
                 </table>
 
