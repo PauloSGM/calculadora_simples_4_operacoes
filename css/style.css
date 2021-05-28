@@ -103,16 +103,7 @@
         width: 100%;
     }
 
-    .c-btn {
-        background: rgb(19, 100, 73) !important;
-    }
-    #teclado table {
-        width: 100%;
-    }
-    .c-btn1 {
-        background: rgb(19, 100, 73) !important;
-        
-    }
+    
     #teclado table {
         width: 100%;
     }
@@ -127,7 +118,7 @@
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
-        font-family:Georgia, 'Times New Roman', Times, serif
+        font-family:Verdana, Geneva, Tahoma, sans-serif
     }
     
     #teclado {
@@ -141,11 +132,31 @@
         padding: 15px 2px;
         color: #fff;
         border-right: 0;
+  
+    }
+    
+    #teclado table tr:nth-child(1) td:nth-child(1) {
+        background: #367a0f;
+        padding: 15px 2px;
+        color: #fff;
+        border-right: 0;
+    }
+    #teclado table td:last-child{
+        background: #57061a;
+        padding: 15px 2px;
+        color: #fff;
+        border-right: 0;
     }
 
+#teclado table tr:nth-child(1) td:nth-child(1) {
+    background: #367a0f;
+    padding: 15px 2px;
+    color: #fff;
+    border-right: 0;
+}
 
     #teclado table td:hover {
-        background-color: #535050 !important;
+        background-color: #2e1414 !important;
     }
     
    
