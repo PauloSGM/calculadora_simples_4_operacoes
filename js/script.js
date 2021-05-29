@@ -1,6 +1,7 @@
 var d1 = "";
 var d2 = "";
 
+
 function printNumber(n) {
     function reset() {
         document.getElementById("numero-tela").value = "";};
