@@ -21,5 +21,6 @@ function reset() {
     document.getElementById("numero-tela").value = "";
 };
 function limpaTela() {
-    document.getElementById("numero-tela").value = "";
+    var digitado = document.getElementById('numero-tela').value;
+    document.getElementById('numero-tela').value = digitado.substring(0, digitado.length -1)
 };
